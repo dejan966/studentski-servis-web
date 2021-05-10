@@ -7,6 +7,7 @@ class DelovnaMesta {
     public $Trajanje;
     public $Delovnik;
     public $Sifra;
+    public $Prosto;
     public $Kraj;
     public $Podjetje;
     public $FilePath;
@@ -18,8 +19,13 @@ class DelovnaMesta {
         $this -> Trajanje = $_trajanje;
         $this -> Delovnik = $_delovnik;
         $this -> Sifra = $_placa;
+        $this -> Prosto = $_prosto;
         $this -> Kraj = $_kraj;
         $this -> Podjetje = $_podjetje;
         $this -> FilePath = $_filepath;
+    }
+    
+    public function _ToString(): string{
+        return $this->Naziv.",".$this->Opis.",".$this->Placa.",".$this->Trajanje.",".$this->Delovnik.",".$this->Sifra.",".$this->Prosto.",".$this->Kraj.",".$this->Podjetje.",".$this->FilePath;
     }
 }

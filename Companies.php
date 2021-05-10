@@ -1,4 +1,3 @@
-<?php require 'baza.php'; ?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.
@@ -8,12 +7,12 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
-        <h1>Read only spletna stran</h1>
+        <title>Podjetja</title>
+        <h1>Podjetja</h1>
     </head>
     <body>
-        <p><a href = "Posts.php">Delovna mesta</a></p>
-        <p><a href = "Companies.php">Podjetja</a></p>
-        <p><a href = "Cities.php">Kraji</a></p>
+        <?php
+        // put your code here
+        ?>
     </body>
 </html>
