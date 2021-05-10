@@ -1,4 +1,4 @@
-<?php require 'baza.php'; ?>
+<?php require 'Database.php'; ?>
 <!DOCTYPE html>
 <!--
 To change this license header, choose License Headers in Project Properties.

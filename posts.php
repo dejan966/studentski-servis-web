@@ -1,4 +1,4 @@
-<?php require_once 'Baza.php';
+<?php require_once 'Database.php';
       require_once 'DelovnaMesta.php'; ?>
 <!DOCTYPE html>
 <!--
@@ -13,13 +13,40 @@ and open the template in the editor.
         <h1>Delovna mesta</h1>
     </head>
     <body>
-        <?php
+        <table border = "1">
+            <tr>
+                <th>Naziv</th>
+                <th>Opis</th>
+                <th>Plača</th>
+                <th>Trajanje</th>
+                <th>Delovnik</th>
+                <th>Šifra</th>
+                <th>Prosta mesta</th>
+                <th>Kraj</th>
+                <th>Podjetje</th>
+                <th>Slika</th>
+            </tr>
         
-        $posts = Baza::ReturnAllPosts();
+        <?php
+        $posts = Database::ReturnAllPosts();
         foreach ($posts as $post){
-            $post = explode(",", $post);
-            echo $post[0];
+            $post = explode(",", $post->_toString());
+            echo '<tr>';
+            echo '<td>'.$post[0].'</td>';
+            echo '<td>'.$post[1].'</td>';
+            echo '<td>'.$post[2].'</td>';
+            echo '<td>'.$post[3].'</td>';
+            echo '<td>'.$post[4].'</td>';
+            echo '<td>'.$post[5].'</td>';
+            echo '<td>'.$post[6].'</td>';
+            echo '<td>'.$post[7].'</td>';
+            echo '<td>'.$post[8].'</td>';
+            echo '<td>'.$post[9].'</td>';
+            echo '</tr>';
         }
         ?>
+        </table>
+        <br>
+        <a href ="index.php"><button>Nazaj</button></a>
     </body>
 </html>
