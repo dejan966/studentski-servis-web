@@ -15,4 +15,16 @@ class Database {
         pg_close();
         return $posts;
     }
+    function ReturnAllCompanies(){
+        $companies = array();
+        $result = pg_query(self::Conn(), "SELECT p.naslov,p.telefon,k.ime FROM podjetja p INNER JOIN kraji k ON k.id = p.kraj_id");
+        $x=0;
+        while ($row = pg_fetch_row($result)){
+            $company =  new Podjetja($row[0], $row[1], $row[2]);
+            $companies[$x] = $company;
+            $x++;
+        }
+        pg_close();
+        return $companies;
+    }
 }
