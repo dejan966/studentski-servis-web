@@ -19,6 +19,11 @@ and open the template in the editor.
                 <th>Telefon</th>
                 <th>Kraj</th>
             </tr>
+            <tr>
+                <td>
+                    hasgfg
+                </td>
+            </tr>
         <?php
         $companies = Database::ReturnAllCompanies();
         foreach ($companies as $company){
