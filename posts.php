@@ -43,11 +43,6 @@ and open the template in the editor.
             echo '<td>'.$post[7].'</td>';
             echo '<td>'.$post[8].'</td>';
             echo '<td>'.'<img src ="'.$post[9].'" alt="random image" width="150" height="100" >'.'</td>';
-            /*$a = substr(strrchr($post[9], "."), 1);
-            if($a == "jpg")
-                echo '<td>'.imagecreatefromjpeg($post[9]).'</td>';
-            else 
-                echo '<td>'.imagecreatefrompng($post[9]).'</td>';*/
             echo '</tr>';
             
         }
