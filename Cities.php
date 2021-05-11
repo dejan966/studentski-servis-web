@@ -9,6 +9,7 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="style.css">
         <title>Kraji</title>
         <h1>Kraji</h1>
     </head>
