@@ -12,7 +12,7 @@ and open the template in the editor.
         <h1>Read only spletna stran</h1>
     </head>
     <body>
-        <p><a href = "Posts.php">Delovna mesta</a></p>
+        <p><a href = "posts.php">Delovna mesta</a></p>
         <p><a href = "Companies.php">Podjetja</a></p>
         <p><a href = "Cities.php">Kraji</a></p>
     </body>
