@@ -1,7 +1,7 @@
 <?php
 class Database {
     function Conn(){
-        return pg_connect("host=ec2-52-213-167-210.eu-west-1.compute.amazonaws.com port=5432 dbname=d72om3lphmskj1 user=agzigsarirffns password=0bbb063c271cbf8b6ad1108669ae17fe0e978ab530c693b62fdc6b4debae87ca");
+        return pg_connect("host=ec2-174-129-225-160.compute-1.amazonaws.com port=5432 dbname=dfb9ne0r15jl31 user=lkdruotybqiygj password=d3a76b0edb876149390875f7906938fd1b3e23dc4bdd4680b41c65f3b17ce772");
     }
     
     function ReturnAllPosts(){
