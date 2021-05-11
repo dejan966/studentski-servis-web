@@ -8,12 +8,13 @@ and open the template in the editor.
 <html>
     <head>
         <meta charset="UTF-8">
-        <title></title>
+        <title>Read only</title>
         <h1>Read only spletna stran</h1>
     </head>
     <body>
         <p><a href = "posts.php">Delovna mesta</a></p>
         <p><a href = "Companies.php">Podjetja</a></p>
         <p><a href = "Cities.php">Kraji</a></p>
+        <p><a href = "Students_New.php">Študenti</a></p>
     </body>
 </html>
