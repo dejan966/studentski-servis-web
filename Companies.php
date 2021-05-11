@@ -31,6 +31,7 @@ and open the template in the editor.
         }
         ?>
         </table>
+        
         <br>
         <a href ="index.php"><button>Nazaj</button></a>
     </body>
